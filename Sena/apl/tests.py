@@ -7,5 +7,5 @@ class PruebaBasica(TestCase):
     
     def test_crear_categoria(self):
         categoria = Categoria.objects.create(nombre='Froijol')
-        consulta = Categoria.objects.get(nombre='Froijol')
+        consulta = Categoria.objects.filter(nombre='Froijol')
         self.assertTrue(consulta.exists())
