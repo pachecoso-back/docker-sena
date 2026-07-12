@@ -5,5 +5,4 @@ env
 ENV
 _pycache_/
 *._pyc
-db.sqlite3
 .DS_Store
