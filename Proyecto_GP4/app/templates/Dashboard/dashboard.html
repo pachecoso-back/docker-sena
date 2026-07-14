@@ -1,6 +1,9 @@
 {% extends "main.html" %}
 {% load static %}
 {% block Contenido %}
+<script>
+    alert("Bienvenido al sistema de gestión de la taquería La Tunaser. Aquí podrás administrar categorías, clientes, compras, facturas, insumos, menús, mesas, pagos, pedidos, platos, productos, proveedores, recetas y usuarios. ¡Explora las funcionalidades y optimiza la gestión de tu negocio!");
+</script>
 <section class="menu-dashboard">
     <a href="{% url 'app:listar_categorias' %}" class="card-dashboard">
         <img title="Categorías" src="{% static 'imagenes/categorias.png' %}" alt="Categorías">
@@ -86,8 +89,4 @@
 
 {% endblock %}
 
-{% block scripts %}
-<script>
-    alert("Bienvenido al sistema de gestión de la taquería La Tunaser. Aquí podrás administrar categorías, clientes, compras, facturas, insumos, menús, mesas, pagos, pedidos, platos, productos, proveedores, recetas y usuarios. ¡Explora las funcionalidades y optimiza la gestión de tu negocio!");
-</script>
-{% endblock %}
+
